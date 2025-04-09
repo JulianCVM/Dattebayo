@@ -1,6 +1,101 @@
+@import url('./var.css');
+
+/* Generacion de valores por defecto del root de la pagina */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Header de la pagina */
+.header {
+    /* Background para identificar la caja */
+    background-color: #000;
+
+    /* Padding para separar el contenido de la caja y darle un espaciado interno con las otras cajas */
+    padding: 10px;
+
+    /* Se usa display flex para hacer la pagina responsiva */
+    display: flex;
+
+    /* Se usa align-items para centralizar los items de manera vertical */
+    align-items: center;
+
+    /* Se usa justify-content para centrar los items de manera horizontal */
+    justify-content: center;
+
+    /* Se usa flex-direction para cambiar la direccion de los items a columna y asi tenerlos apilados y no en fila */
+    flex-direction: column;
+
+    /* Se usa font-family para cambiar el tipo de fuente de los items, en este caso usando la fuente "Naruto" que se definio en var.css */
+    font-family: Naruto;
+}
+
+.header h1 {
+    /* Se usa font-size para cambiar el tamaño de la fuente de los items, se usa como medida rem para que sea responsive, manejando el tamaño de la fuente con el tamaño de la pantalla */
+    font-size: 4rem;
+
+    /* Se usa background para cambiar el color de fondo de los items, se usa linear-gradient para cambiar el color de fondo de los items, en direccion de derecha a izquierda usando los colores definidos en var.css */
+    background: linear-gradient(to right, var(--color-3), var(--color-4));
+
+    /* Webkit es un motor de renderizado utilizado principalmente por navegadores como Safari y Chrome.
+        Proporciona soporte para características CSS avanzadas como:
+            - Animaciones
+            - Transiciones
+            - Gradientes
+            - Transformaciones
+            - Efectos de texto
+        El motivo de uso del Webkit es para asegurar que se rendericen y carguen todos los efectos y estilos de manera correcta en todos los navegadores, ya que el Webkit es un motor de renderizado utilizado principalmente por navegadores como Safari y Chrome.
+        Por lo tanto, todos los elementos que contengan el prefijo -webkit- seran renderizados en el motor de renderizado de Safari y Chrome, por eso van a tener la misma configuracion que los elementos que no contengan el prefijo -webkit-
+       */
+
+
+    /* Se usa -webkit-background-clip para establecer el area que se va a pintar con el color de fondo, se usa text para que se pinte el color de fondo en el texto*/
+    -webkit-background-clip: text;
+
+    /* Se usa background-clip para establecer el area que se va a pintar con el color de fondo, se usa text para que se pinte el color de fondo en el texto */
+    background-clip: text;
+
+    /* Se usa color para cambiar el color de los items, se usa transparent para que el color de fondo se vea transparente */
+    color: transparent;
+
+    /* Se usa -webkit-text-stroke para cambiar el color de los items, se usa la medida de 1px para establecer el grosor del borde que van a tener las letras generando un delineado en estas */
+    -webkit-text-stroke: 1px var(--color-2);
+}
+
+.header h2 {
+    /* Se usa font-size para cambiar el tamaño de la fuente de los items, se usa como medida rem para que sea responsive, manejando el tamaño de la fuente con el tamaño de la pantalla */
+    font-size: 2rem;
+
+    /* Se usa background para cambiar el color de fondo de los items, se usa linear-gradient para cambiar el color de fondo de los items, en direccion de derecha a izquierda usando los colores definidos en var.css */
+    background: linear-gradient(to right, var(--color-3), var(--color-4));
+
+    /* Se usa -webkit-background-clip para establecer el area que se va a pintar con el color de fondo, se usa text para que se pinte el color de fondo en el texto*/
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* Se usa color para cambiar el color de los items, se usa transparent para que el color de fondo se vea transparente */
+
+    color: transparent;
+    /* Se usa -webkit-text-stroke para cambiar el color de los items, se usa la medida de 1px para establecer el grosor del borde que van a tener las letras generando un delineado en estas */
+    -webkit-text-stroke: 0.5px var(--color-2);
+}
+
+
+
+
+
+.text {
+    background-color: #b02121;
+    color: #000;
+    padding: 10px;
+}
+
+
+.container {
+    background-color: #60d866;
+    color: #fff;
+    padding: 10px;
+}
+
 
