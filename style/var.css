@@ -3,6 +3,8 @@
     --color-2: #ffffff;
     --color-3: #F5A02D;
     --color-4: #F5302A;
+    --color-5: #2E7D32;
+    --color-6: #1B5E20;
 
 }
 
@@ -11,5 +13,37 @@
     src: url('../src/font/ninja_naruto/njnaruto.ttf');
 }
 
+@font-face {
+    font-family: 'goth-titan-font';
+    src: url('../src/font/goth-titan-font/GothTitan-0W5md.ttf');
+}
 
+@font-face {
+    font-family: 'haruto-font';
+    src: url('../src/font/haruto-font/HarutoPersonalUse-gwM5R.ttf');
+}
 
+@font-face {
+    font-family: 'japan-bento-version-font';
+    src: url('../src/font/japan-bento-version-font/JapanBentoDemoVersionRegular-nRWAJ.otf');
+}
+
+@font-face {
+    font-family: 'kareudon-font';
+    src: url('../src/font/kareudon-font/Kareudon-lg0Ad.otf');
+}
+
+@font-face {
+    font-family: 'manga-font';
+    src: url('../src/font/manga-font/Manga-4vx6.ttf');
+}
+
+@font-face {
+    font-family: 'qasengi-trial-font';
+    src: url('../src/font/qasengi-trial-font/QasengiTrialRegular-GO91O.ttf');
+}
+
+@font-face {
+    font-family: 'yoruka-font';
+    src: url('../src/font/yoruka-font/Yoruka-1j9rL.ttf');
+}
