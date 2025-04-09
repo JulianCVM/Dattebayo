@@ -86,10 +86,32 @@
 
 
 .text {
-    background-color: #b02121;
-    color: #000;
-    padding: 10px;
+    /* Se usa background para aplicar un gradiente lineal de derecha a izquierda */
+    background: linear-gradient(to right, var(--color-5), var(--color-6));
+    
+    /* Se usa -webkit-background-clip y background-clip para aplicar el gradiente al texto */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+    /* Se usa -webkit-text-stroke para agregar un borde al texto */
+    -webkit-text-stroke: 0.5px var(--color-2);
+    
+    /* Se usa padding para dar espaciado interno */
+    padding: 1rem;
+    
+    /* Se usa font-family para establecer la fuente */
+    font-family: 'yoruka-font';
+    
+    /* Se usa font-size para establecer el tamaño de la fuente */
+    font-size: 1.5rem;
+    
+    /* Se usa display flex con justify-content y align-items para centrar el contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 
 .container {
