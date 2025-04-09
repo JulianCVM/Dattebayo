@@ -1,0 +1,15 @@
+:root {
+    --color-1: #000000;
+    --color-2: #b02121;
+    --color-3: #60d866;
+    --color-4: #ffffff;
+    --color-5: #000000;
+}
+
+@font-face {
+    font-family: 'Naruto';
+    src: url('../src/font/ninja_naruto/njnaruto.ttf');
+}
+
+
+
