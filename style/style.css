@@ -7,147 +7,470 @@
     box-sizing: border-box;
 }
 
+:root {
+    /* Se usa --primary-color para definir el color primario de los items */
+    --primary-color: #ff6b00;
+
+    /* Se usa --secondary-color para definir el color secundario de los items */
+    --secondary-color: #e55c00;
+
+    /* Se usa --background-color para definir el color de fondo de los items */
+    --background-color: #f8f9fa;
+
+    /* Se usa --card-background para definir el color de fondo de las tarjetas */
+    --card-background: #ffffff;
+
+    /* Se usa --text-color para definir el color de los items */
+    --text-color: #333333;
+
+    /* Se usa --text-secondary para definir el color secundario de los items */
+    --text-secondary: #666666;
+
+    /* Se usa --border-radius para definir el radio de los items */
+    --border-radius: 12px;
+
+    /* Se usa --box-shadow para definir el sombreado de los items */
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    /* Se usa --transition para definir la transicion de los items */
+    --transition: all 0.3s ease;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    /* Se usa font-family para definir la fuente de los items */
+    font-family: 'yoruka-font', Arial, sans-serif;
+
+    /* Se usa line-height para definir el espaciado entre las lineas de los items */
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+
+    /* Se usa background-color para definir el color de fondo de los items */
+    background-color: var(--background-color);
+
+    /* Se usa color para definir el color de los items */
+    color: var(--text-color);
+
+    /* Se usa min-height para definir la altura minima de los items */
+    min-height: 100vh;
+
+    /* Se usa display flex para definir el display de los items */
+    display: flex;
+
+    /* Se usa flex-direction para definir la direccion de los items */
+    flex-direction: column;
 }
 
 /* Header */
 .header {
-    background-color: #ff6b00;
+    /* Se usa background para definir el color de fondo de los items */
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+
+    /* Se usa color para definir el color de los items */
     color: white;
+
+    /* Se usa text-align para definir el alineamiento de los items */
     text-align: center;
-    padding: 2rem;
+
+    /* Se usa padding para definir el espaciado interno de los items */
+    padding: 3rem 1rem;
+
+    /* Se usa margin-bottom para definir el espaciado inferior de los items */
     margin-bottom: 2rem;
+
+    /* Se usa box-shadow para definir el sombreado de los items */
+    box-shadow: var(--box-shadow);
 }
 
 .header h1 {
-    font-size: 2.5rem;
+    /* Se usa font-family para definir la fuente de los items */
+    font-family: 'Naruto', sans-serif;
+
+    /* Se usa font-size para definir el tamaño de la fuente de los items */
+    font-size: 2.8rem;
+
+    /* Se usa margin-bottom para definir el espaciado inferior de los items */
     margin-bottom: 0.5rem;
+
+    /* Se usa text-shadow para definir el sombreado de los items */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .header h2 {
+    /* Se usa font-family para definir la fuente de los items */
+    font-family: 'yoruka-font', sans-serif;
+
+    /* Se usa font-size para definir el tamaño de la fuente de los items */
     font-size: 1.5rem;
+
+    /* Se usa font-weight para definir el peso de la fuente de los items */
     font-weight: normal;
+
+    /* Se usa opacity para definir la opacidad de los items */
+    opacity: 0.9;
 }
 
 /* Contenedor principal */
 .container {
+    /* Se usa max-width para definir el ancho maximo de los items */
     max-width: 1200px;
+
+    /* Se usa margin para definir el espaciado externo de los items */
     margin: 0 auto;
-    padding: 0 1rem;
+
+    /* Se usa padding para definir el espaciado interno de los items */
+    padding: 0 1.5rem;
+
+    /* Se usa flex para definir el display de los items */
+    flex: 1;
+}
+
+/* Texto introductorio */
+.text {
+    /* Se usa text-align para definir el alineamiento de los items */
+    text-align: center;
+
+    /* Se usa margin-bottom para definir el espaciado inferior de los items */
+    margin-bottom: 2.5rem;
+
+    /* Se usa padding para definir el espaciado interno de los items */
+    padding: 1rem;
+}
+
+.text p {
+    /* Se usa font-family para definir la fuente de los items */
+    font-family: 'yoruka-font', sans-serif;
+
+    /* Se usa font-size para definir el tamaño de la fuente de los items */
+    font-size: 1.2rem;
+
+    /* Se usa color para definir el color de los items */
+    color: var(--text-secondary);
 }
 
 /* Tarjetas de personajes */
 .card {
+    /* Se usa display grid para definir el display de los items */
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    /* Se usa grid-template-columns para definir el numero de columnas de los items */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+    /* Se usa gap para definir el espaciado entre los items */
     gap: 2rem;
-    margin-bottom: 2rem;
+
+    margin-bottom: 3rem;
 }
 
 .character {
-    background: white;
-    border-radius: 8px;
+    /* Se usa background para definir el color de fondo de los items */
+    background: var(--card-background);
+
+    /* Se usa border-radius para definir el radio de los items */
+    border-radius: var(--border-radius);
+
+    /* Se usa overflow para definir el desbordamiento de los items */
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+
+    /* Se usa box-shadow para definir el sombreado de los items */
+    box-shadow: var(--box-shadow);
+
+    /* Se usa transition para definir la transicion de los items */
+    transition: var(--transition);
+
+    /* Se usa display flex para definir el display de los items */
+    display: flex;
+
+    /* Se usa flex-direction para definir la direccion de los items */
+    flex-direction: column;
 }
 
 .character:hover {
+    /* Se usa transform para definir la transformacion de los items */
     transform: translateY(-5px);
+
+    /* Se usa box-shadow para definir el sombreado de los items */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .character img {
+    /* Se usa width para definir el ancho de los items */
     width: 100%;
-    height: 200px;
+
+    /* Se usa height para definir la altura de los items */
+    height: 250px;
+
+    /* Se usa object-fit para definir la forma de los items */
     object-fit: cover;
+
+    /* Se usa border-bottom para definir el borde inferior de los items */
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .character h3 {
-    padding: 1rem;
-    color: #333;
-    font-size: 1.2rem;
+    /* Se usa font-family para definir la fuente de los items */
+    font-family: 'Naruto', sans-serif;
+
+    /* Se usa padding para definir el espaciado interno de los items */
+    padding: 1.2rem 1.2rem 0.5rem;
+
+    /* Se usa color para definir el color de los items */
+    color: var(--text-color);
+
+    /* Se usa font-size para definir el tamaño de la fuente de los items */
+    font-size: 1.4rem;
+
+    /* Se usa font-weight para definir el peso de la fuente de los items */
+    font-weight: 600;
+
+    /* Se usa text-shadow para definir el sombreado de los items */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .character p {
-    padding: 0 1rem 1rem;
-    color: #666;
+    /* Se usa font-family para definir la fuente de los items */
+    font-family: 'yoruka-font', sans-serif;
+
+    /* Se usa padding para definir el espaciado interno de los items */
+    padding: 0.5rem 1.2rem;
+
+    /* Se usa color para definir el color de los items */
+    color: var(--text-secondary);
+
+    /* Se usa font-size para definir el tamaño de la fuente de los items */
+    font-size: 1rem;
+
+    /* Se usa line-height para definir el espaciado entre las lineas de los items */
+    line-height: 1.4;
 }
 
 /* Paginación */
 .pagination-container {
+    /* Se usa display flex para definir el display de los items */
     display: flex;
+
+    /* Se usa justify-content para definir el alineamiento de los items */
     justify-content: center;
-    margin: 2rem 0;
+
+    /* Se usa margin para definir el espaciado externo de los items */
+    margin: 2.5rem 0;
 }
 
 .pagination {
+    /* Se usa display flex para definir el display de los items */
     display: flex;
+
+    /* Se usa gap para definir el espaciado entre los items */
     gap: 0.5rem;
+
+    /* Se usa align-items para definir el alineamiento de los items */
     align-items: center;
+
+    /* Se usa background para definir el color de fondo de los items */
+    background: var(--card-background);
+
+    /* Se usa padding para definir el espaciado interno de los items */
+    padding: 0.8rem;
+
+    /* Se usa border-radius para definir el radio de los items */
+    border-radius: var(--border-radius);
+
+    /* Se usa box-shadow para definir el sombreado de los items */
+    box-shadow: var(--box-shadow);
 }
 
 .pagination button {
-    padding: 0.5rem 1rem;
+    /* Se usa font-family para definir la fuente de los items */
+    font-family: 'yoruka-font', sans-serif;
+
+    /* Se usa padding para definir el espaciado interno de los items */
+    padding: 0.6rem 1.2rem;
+
+    /* Se usa border para definir el borde de los items */
     border: none;
-    background-color: #ff6b00;
+
+    /* Se usa background-color para definir el color de fondo de los items */
+    background-color: var(--primary-color);
+
+    /* Se usa color para definir el color de los items */
     color: white;
-    border-radius: 4px;
+
+    /* Se usa border-radius para definir el radio de los items */
+    border-radius: 6px;
+
+    /* Se usa cursor para definir el cursor de los items */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+
+    /* Se usa transition para definir la transicion de los items */
+    transition: var(--transition);
+
+    /* Se usa font-weight para definir el peso de la fuente de los items */
+    font-weight: 500;
 }
 
 .pagination button:hover:not(:disabled) {
-    background-color: #e55c00;
+    /* Se usa background-color para definir el color de fondo de los items */
+    background-color: var(--secondary-color);
+
+    /* Se usa transform para definir la transformacion de los items */
+    transform: translateY(-2px);
 }
 
 .pagination button:disabled {
-    background-color: #ccc;
+    /* Se usa background-color para definir el color de fondo de los items */
+    background-color: #cccccc;
+
+    /* Se usa cursor para definir el cursor de los items */
     cursor: not-allowed;
+
+    /* Se usa opacity para definir la opacidad de los items */
+    opacity: 0.7;
 }
 
 .pagination .page-numbers {
+    /* Se usa display flex para definir el display de los items */
     display: flex;
+
+    /* Se usa gap para definir el espaciado entre los items */
     gap: 0.5rem;
 }
 
 .pagination .page-numbers button {
+    /* Se usa min-width para definir el ancho minimo de los items */
     min-width: 40px;
+
+    /* Se usa height para definir la altura de los items */
+    height: 40px;
+
+    /* Se usa display flex para definir el display de los items */
+    display: flex;
+
+    /* Se usa align-items para definir el alineamiento de los items */
+    align-items: center;
 }
 
 .pagination .page-numbers button.active {
-    background-color: #e55c00;
+    /* Se usa background-color para definir el color de fondo de los items */
+    background-color: var(--secondary-color);
+
+    /* Se usa font-weight para definir el peso de la fuente de los items */
     font-weight: bold;
+
+    /* Se usa transform para definir la transformacion de los items */
+    transform: scale(1.1);
 }
 
 /* Footer */
 footer {
+    /* Se usa text-align para definir el alineamiento de los items */
     text-align: center;
+
+    /* Se usa padding para definir el espaciado interno de los items */
     padding: 2rem;
-    background-color: #333;
+
+    /* Se usa background para definir el color de fondo de los items */
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+
+    /* Se usa color para definir el color de los items */
     color: white;
-    margin-top: 2rem;
+
+    /* Se usa margin-top para definir el espaciado superior de los items */
+    margin-top: auto;
+}
+
+footer p {
+    /* Se usa font-family para definir la fuente de los items */
+    font-family: 'yoruka-font', sans-serif;
+
+    /* Se usa font-size para definir el tamaño de la fuente de los items */
+    font-size: 1rem;
+
+    /* Se usa opacity para definir la opacidad de los items */
+    opacity: 0.9;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
+    .header h1 {
+        /* Se usa font-size para definir el tamaño de la fuente de los items */
+        font-size: 2.2rem;
+    }
+    
+    .header h2 {
+        /* Se usa font-size para definir el tamaño de la fuente de los items */
+        font-size: 1.2rem;
+    }
+    
     .card {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        /* Se usa grid-template-columns para definir el numero de columnas de los items */
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+        /* Se usa gap para definir el espaciado entre los items */
+        gap: 1.5rem;
+    }
+    
+    .character img {
+        /* Se usa height para definir la altura de los items */
+        height: 200px;
     }
     
     .pagination {
+        /* Se usa flex-wrap para definir el ajuste de los items */
         flex-wrap: wrap;
+
+        /* Se usa justify-content para definir el alineamiento de los items */
         justify-content: center;
+
+        /* Se usa padding para definir el espaciado interno de los items */
+        padding: 0.5rem;
+    }
+    
+    .pagination button {
+        /* Se usa padding para definir el espaciado interno de los items */
+        padding: 0.5rem 1rem;
+
+        /* Se usa font-size para definir el tamaño de la fuente de los items */
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        /* Se usa padding para definir el espaciado interno de los items */
+        padding: 2rem 1rem;
+    }
+    
+    .header h1 {
+        /* Se usa font-size para definir el tamaño de la fuente de los items */
+        font-size: 1.8rem;
+    }
+    
+    .card {
+        /* Se usa grid-template-columns para definir el numero de columnas de los items */
+        grid-template-columns: 1fr;
+    }
+    
+    .pagination {
+        /* Se usa gap para definir el espaciado entre los items */
+        gap: 0.3rem;
+    }
+    
+    .pagination button {
+        /* Se usa padding para definir el espaciado interno de los items */
+        padding: 0.4rem 0.8rem;
+
+        /* Se usa font-size para definir el tamaño de la fuente de los items */
+        font-size: 0.8rem;
     }
 }
 
 /* Generacion de valores por defecto del root de la pagina */
 * {
+    /* Se usa margin para definir el espaciado externo de los items */
     margin: 0;
+
+    /* Se usa padding para definir el espaciado interno de los items */
     padding: 0;
+
+    /* Se usa box-sizing para definir el tamaño de los items */
     box-sizing: border-box;
 }
 
@@ -259,8 +582,13 @@ footer {
 
 
 .container {
+    /* Se usa background-color para cambiar el color de fondo de los items */
     background-color: #60d866;
+
+    /* Se usa color para cambiar el color de los items */
     color: #fff;
+
+    /* Se usa padding para dar un espaciado interno a los items */
     padding: 10px;
 }
 
