@@ -124,7 +124,7 @@ Las contribuciones son bienvenidas. Por favor, sigue estos pasos:
 Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
 
 ## 👨‍💻 Autor
-Tu Nombre - [@tu-usuario](https://github.com/tu-usuario)
+Julian - [@JulianCVM](https://github.com/JulianCVM)
 
 ## 🙏 Agradecimientos
 - API de Dattebayo por la información
